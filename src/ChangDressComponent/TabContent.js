@@ -6,7 +6,7 @@ export default function TabContent() {
     return Data.tabPanes.map((item, index) => {
       if (item.type === type) {
         return (
-          <div class="col-md-3">
+          <div class="col-md-3" style={{overflow: "hidden"}}>
             <TabItem item={item} />
           </div>
         );
